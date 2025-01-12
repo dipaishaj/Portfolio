@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dipali Jain - Portfolio</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <script defer src="script.js"></script>
+</head>
+<header>
+    <div class="container header-container">
+        <!-- Profile Picture -->
+        <div class="profile-picture">
+            <img src="images/Profile photo.jpeg" alt="Dipali Jain">
+        </div>
+
+        <!-- Centered Name and Navigation -->
+        <div class="center-content">
+            <h1 class="logo">Dipali Jain</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#publications">Publications</a></li>
+                    <li><a href="#career">Career</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Resume Button -->
+        <div class="resume-container">
+            <a href="Dipali_Jain_Resume.pdf" target="_blank" download class="resume-button">Download Resume</a>
+        </div>
+    </div>
+</header>
+
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="container">
+                <h2>About Me</h2>
+                <p>I am a PhD candidate at the University of Texas at Dallas specializing in Computer Engineering with a focus on hardware security using AI. With over a decade of academic and industry experience, I aim to innovate in secure and intelligent hardware systems.</p>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="container">
+                <h2>Skills</h2>
+                <p>Here’s an overview of my technical expertise, tools I work with, and soft skills:</p>
+                
+                <!-- Skills Grid -->
+                <div class="skills-grid">
+                    <!-- Technical Skills -->
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>Python</li>
+                            <li>C++</li>
+                            <li>C</li>
+                            <li>Machine Learning</li>
+                            <li>Deep Learning</li>
+                            <li>Hardware Security</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Tools -->
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Cadence</li>
+                            <li>PyTorch</li>
+                            <li>HSpice</li>
+                            <li>MATLAB</li>
+                            <li>LabVIEW</li>
+                            <li>TensorFlow</li>
+                            <li>Git & GitHub</li>
+                            <li>Jupyter Notebook</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Soft Skills -->
+                    <div class="skill-category">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Team Collaboration</li>
+                            <li>Critical Thinking</li>
+                            <li>Problem Solving</li>
+                            <li>Time Management</li>
+                            <li>Adaptability</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>        
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card" onclick="showProjectDetails('project1')" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                        <img src="images/basketball.jpeg" alt="Basketball Best Team Selection">
+                        <h3>Basketball Best Team Selection</h3>
+                        <p class="project-description hidden">
+                            Using bi-variate and multivariate EDA techniques to get data-driven insights on recommending the teams.
+                        </p>
+                    </div>
+                    <div class="project-card" onclick="showProjectDetails('project2')" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                        <img src="images/automative survellience system.jpeg" alt="Automotive Surveillance">
+                        <h3>Automotive Surveillance</h3>
+                        <p class="project-description hidden">
+                            Deep Learning and a clickable GUI-based interface (Flask) to monitor vehicle activity.
+                        </p>
+                    </div>
+                    <div class="project-card" onclick="showProjectDetails('project3')" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                        <img src="images/signal strength survellience.jpeg" alt="Determining Signal Strength">
+                        <h3>Determining Signal Strength or Quality</h3>
+                        <p class="project-description hidden">
+                            Machine Learning model to predict the equipment's signal quality using a Neural Network regressor.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Modal for Abstract -->
+        <div id="projectModal" class="modal hidden">
+            <div class="modal-content">
+                <span class="close-button" onclick="closeProjectDetails()">×</span>
+                <h3 id="projectTitle"></h3>
+                <p id="projectAbstract"></p>
+            </div>
+        </div>
+        
+        
+
+        <!-- Publications Section -->
+        <section id="publications" class="section publications-section">
+            <div class="container">
+                <h2>Publications</h2>
+                <ol class="publication-list">
+                    <li><strong>"Trojan Localization in Generic AMS Circuits from Combined Power and Functional"</strong> - IEEE International Test Conference (HOST), 2025 </li>
+                    <li><strong>“A Hybrid Machine Learning Approach to Analog Circuit Deobfuscation”</strong> - ASP-DAC, 2025.</li>
+                    <li><strong>“Towards Machine-Learning-based Oracle-Guided Analog Circuit Deobfuscation”</strong> - IEEE International Test Conference, 2024.</li>
+                    <li><strong>"On Hardware Trojan Detection using Oracle-Guided Circuit Learning." </strong> - Great Lakes Symposium on VLSI 2024.</li>
+                    <li><strong>"Comparison of Particle Swarm Optimization and Ziegler Nichols Techniques"</strong> - International Journal for Research in Engineering Application & Management (IJREAM), 2021.</li>
+                    <li><strong>"Classification of Brain cancer using artificial neural network"</strong> - IEEE International Test Conference, 2010. </li>
+                </ol>
+            </div>
+        </section>
+
+        <!-- Career Section -->
+        <section id="career" class="section career-section">
+            <div class="container">
+                <h2>Career Journey</h2>
+                <p>Here’s an overview of my professional milestones and academic achievements:</p>
+                <div class="career-timeline">
+                    <div class="career-item">
+                        <h3>PhD Candidate</h3>
+                        <span class="career-duration">2022 - Present</span>
+                        <p>University of Texas at Dallas, specializing in hardware security and AI-driven innovations.</p>
+                    </div>
+                    <div class="career-item">
+                        <h3>Teaching Assistant</h3>
+                        <span class="career-duration">2024 - 2025</span>
+                        <p>Assist undergraduate students for Fundamental 1 lab</p>
+                    </div>
+                    <div class="career-item">
+                        <h3>Research Assistant</h3>
+                        <span class="career-duration">2022 - 2024</span>
+                        <p>Worked on analog circuit security and developed machine learning models for circuit deobfuscation.</p>
+                    </div>
+                    <div class="career-item">
+                        <h3>Assistant Professor</h3>
+                        <span class="career-duration">2006 - 2022</span>
+                        <p>Taught undergraduates Instrumentation and Control subjects for Mumbai University.</p>
+                </div>
+            </div>
+        </section>        
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p>Feel free to reach out using the buttons below:</p>
+                <div class="button-group">
+                    <a href="mailto:dipali.jain@utdallas.edu" class="contact-button email-button">
+                        <i class="fas fa-envelope"></i> Email Me
+                    </a>
+                    <a href="https://www.linkedin.com/in/dipali-joshi-1164b76a" target="_blank" class="contact-button linkedin-button">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; Dipali Jain. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
