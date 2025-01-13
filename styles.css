@@ -73,7 +73,7 @@ header {
     color: #1abc9c; /* Vibrant green for hover */
 }
 
-/* Resume Button */
+/* Resume Button
 .resume-container {
     margin-left: auto;
 }
@@ -90,10 +90,9 @@ header {
 
 .resume-button:hover {
     background: #16a085;
-}
+ */
 
-
-/* Section */
+ /* Section */
 .section {
     padding: 4rem 2rem;
     text-align: center;
