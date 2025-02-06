@@ -8,32 +8,27 @@
     <script defer src="script.js"></script>
 </head>
 <header>
-    <div class="container header-container">
-        <!-- Profile Picture -->
+    <div class="header-container">
         <div class="profile-picture">
             <img src="images/Profile photo.jpeg" alt="Dipali Jain">
         </div>
-
-        <!-- Centered Name and Navigation -->
         <div class="center-content">
             <h1 class="logo">Dipali Jain</h1>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#publications">Publications</a></li>
-                    <li><a href="#career">Career</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
+            <!-- Mobile Menu Toggle Button -->
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#career">Career</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </div>
-
-        <!-- Resume Button -->
-        <!--div class="resume-container">
-        <a href="Dipali_Jain_Resume.pdf" target="_blank" download class="resume-button">Download Resume</a>-->
     </div>
 </header>
+
+
 
 
     <!-- Main Content -->
@@ -97,35 +92,37 @@
             </div>
         </section>        
 
-        <!-- Projects Section -->
         <section id="projects" class="section projects-section">
             <div class="container">
                 <h2>Projects</h2>
                 <div class="project-grid">
-                    <div class="project-card" onclick="showProjectDetails('project1')" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+        
+                    <!-- Basketball Best Team Selection -->
+                    <a href="https://github.com/dipaishaj/Basketball_best_team/blob/main/README.md" target="_blank" class="project-card">
                         <img src="images/basketball.jpeg" alt="Basketball Best Team Selection">
                         <h3>Basketball Best Team Selection</h3>
-                        <p class="project-description hidden">
-                            Using bi-variate and multivariate EDA techniques to get data-driven insights on recommending the teams.
-                        </p>
-                    </div>
-                    <div class="project-card" onclick="showProjectDetails('project2')" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
+                        <p class="project-description">Using bi-variate and multivariate EDA techniques to get data-driven insights on recommending teams.</p>
+                    </a>
+        
+                    <!-- Automotive Surveillance -->
+                    <a href="https://github.com/dipaishaj/automotive_surveillance/blob/main/README.md" target="_blank" class="project-card">
                         <img src="images/automative survellience system.jpeg" alt="Automotive Surveillance">
                         <h3>Automotive Surveillance</h3>
-                        <p class="project-description hidden">
-                            Deep Learning and a clickable GUI-based interface (Flask) to monitor vehicle activity.
-                        </p>
-                    </div>
-                    <div class="project-card" onclick="showProjectDetails('project3')" onmouseover="showDescription(this)" onmouseout="hideDescription(this)">
-                        <img src="images/signal strength survellience.jpeg" alt="Determining Signal Strength">
+                        <p class="project-description">Deep Learning and a clickable GUI-based interface (Flask) to monitor vehicle activity.</p>
+                    </a>
+        
+                    <!-- Signal Strength Quality -->
+                    <a href="https://github.com/dipaishaj/signal_strength_quality/blob/main/README.md" target="_blank" class="project-card">
+                        <img src="images/signal strength survellience.jpeg" alt="Determining Signal Strength or Quality">
                         <h3>Determining Signal Strength or Quality</h3>
-                        <p class="project-description hidden">
-                            Machine Learning model to predict the equipment's signal quality using a Neural Network regressor.
-                        </p>
-                    </div>
+                        <p class="project-description">Machine Learning model to predict the equipment's signal quality using a Neural Network regressor.</p>
+                    </a>
+        
                 </div>
             </div>
         </section>
+        
+        
         
         <!-- Modal for Abstract -->
         <div id="projectModal" class="modal hidden">
@@ -143,12 +140,59 @@
             <div class="container">
                 <h2>Publications</h2>
                 <ol class="publication-list">
-                    <li><strong>"Trojan Localization in Generic AMS Circuits from Combined Power and Functional"</strong> - IEEE International Test Conference (HOST), 2025 </li>
-                    <li><strong>“A Hybrid Machine Learning Approach to Analog Circuit Deobfuscation”</strong> - ASP-DAC, 2025.</li>
-                    <li><strong>“Towards Machine-Learning-based Oracle-Guided Analog Circuit Deobfuscation”</strong> - IEEE International Test Conference, 2024.</li>
-                    <li><strong>"On Hardware Trojan Detection using Oracle-Guided Circuit Learning." </strong> - Great Lakes Symposium on VLSI 2024.</li>
-                    <li><strong>"Comparison of Particle Swarm Optimization and Ziegler Nichols Techniques"</strong> - International Journal for Research in Engineering Application & Management (IJREAM), 2021.</li>
-                    <li><strong>"Classification of Brain cancer using artificial neural network"</strong> - IEEE International Test Conference, 2010. </li>
+                    <li>
+                        <strong>
+                            <a href="" target="_blank">
+                                "Trojan Localization in Generic AMS Circuits from Combined Power and Functional"
+                            </a>
+                        </strong> 
+                        - IEEE International Test Conference (HOST), 2025 (yet to be published)
+                    </li>
+
+                    <li>
+                        <strong>
+                            <a href="https://www.aspdac.com/aspdac2025/archive/program/program_abst.html#5D-3" target="_blank">
+                                “A Hybrid Machine Learning Approach to Analog Circuit Deobfuscation”
+                            </a>
+                        </strong> 
+                        - ASP-DAC, 2025.
+                    </li>
+
+                    <li>
+                        <strong>
+                            <a href="https://ieeexplore.ieee.org/document/10766677" target="_blank">
+                                “Towards Machine-Learning-based Oracle-Guided Analog Circuit Deobfuscation”
+                            </a>
+                        </strong> 
+                        - IEEE International Test Conference, 2024.
+                    </li>
+
+                    <li>
+                        <strong>
+                            <a href="https://dl.acm.org/doi/10.1145/3649476.3658705" target="_blank">
+                                "On Hardware Trojan Detection using Oracle-Guided Circuit Learning."
+                            </a>
+                        </strong> 
+                        - Great Lakes Symposium on VLSI 2024.
+                    </li>
+
+                    <li>
+                        <strong>
+                            <a href="https://ijream.org/papers/IJREAMV06I0161067.pdf" target="_blank">
+                                "Comparison of Particle Swarm Optimization and Ziegler Nichols Techniques"
+                            </a>
+                        </strong> 
+                        - International Journal for Research in Engineering Application & Management (IJREAM), 2021.
+                    </li>
+
+                    <li>
+                        <strong>
+                            <a href="https://ieeexplore.ieee.org/abstract/document/5479975" target="_blank">
+                                Classification of Brain cancer using artificial neural network"
+                            </a>
+                        </strong> 
+                        - IEEE International Test Conference, 2010. 
+                    </li>
                 </ol>
             </div>
         </section>

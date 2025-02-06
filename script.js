@@ -25,7 +25,7 @@ function showProjectDetails(projectId) {
     modal.classList.remove('hidden');
 }
 
-// Close modal
+
 function closeProjectDetails() {
     document.getElementById('projectModal').classList.add('hidden');
 }
@@ -36,8 +36,9 @@ function showDescription(card) {
     description.classList.remove('hidden');
 }
 
-// Hide description on mouse out
 function hideDescription(card) {
     const description = card.querySelector('.project-description');
     description.classList.add('hidden');
 }
+
+
