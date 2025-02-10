@@ -41,4 +41,7 @@ function hideDescription(card) {
     description.classList.add('hidden');
 }
 
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("show");
+}
 
