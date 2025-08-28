@@ -45,3 +45,26 @@ function toggleMenu() {
     document.querySelector(".nav-links").classList.toggle("show");
 }
 
+// ---- Teaching subnav active state on scroll ----
+(function () {
+    const links = Array.from(document.querySelectorAll('.subnav-link'));
+    if (!links.length) return;
+
+    const targets = links.map(a => document.querySelector(a.getAttribute('href'))).filter(Boolean);
+
+    const activate = (id) => {
+        links.forEach(a => {
+        a.classList.toggle('active', a.getAttribute('href') === '#' + id);
+    });
+};
+
+const observer = new IntersectionObserver((entries) => {
+    // pick the most visible section
+    const visible = entries
+        .filter(e => e.isIntersecting)
+        .sort((a,b) => b.intersectionRatio - a.intersectionRatio)[0];
+        if (visible) activate(visible.target.id);
+    }, { rootMargin: '-30% 0px -60% 0px', threshold: [0.2, 0.5, 0.8] });
+    
+    targets.forEach(el => el && observer.observe(el));
+})();

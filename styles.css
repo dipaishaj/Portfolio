@@ -602,3 +602,64 @@ footer {
         padding: 50px;
     }
 }
+
+/* Smooth scroll sitewide */
+html { scroll-behavior: smooth; }
+
+/* Teaching subnav */
+.subnav {
+    position: sticky;
+    top: 70px;          /* below your header */
+    z-index: 900;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #f5f6fa;
+    padding: 0.75rem 1rem;
+    border-radius: 999px;
+    margin: 1rem auto 1.5rem;
+    width: fit-content;
+    box-shadow: 0 2px 8px rgba(0,0,0,.06);
+}
+.subnav-link {
+    text-decoration: none;
+    padding: 0.5rem 0.9rem;
+    border-radius: 999px;
+    border: 1px solid #d9dee7;
+    color: #34495e;
+    font-weight: 600;
+    font-size: 0.95rem;
+    transition: background .2s ease, color .2s ease, transform .1s ease;
+}
+.subnav-link:hover { background: #fff; transform: translateY(-1px); }
+.subnav-link.active { background: #1abc9c; color: #fff; border-color: #1abc9c; }
+
+/* Teaching blocks */
+.t-block { 
+    margin: 2rem auto 3rem; 
+    max-width: 1000px; 
+    text-align: left; 
+}
+.t-list { max-width: 900px; margin: 0.3rem auto 0; line-height: 1.7; }
+.t-image { max-width: 900px; width: 100%; height: auto; border-radius: 10px; }
+.t-files { max-width: 900px; margin: 0.5rem auto; }
+
+/* Table styling for Evaluations */
+.table-wrap { overflow-x: auto; }
+.table {
+    width: 100%; max-width: 900px; margin: 0 auto;
+    border-collapse: collapse;
+}
+.table th, .table td {
+    padding: 0.6rem 0.8rem;
+    border-bottom: 1px solid #e6e9ef;
+}
+.table th { background: #f0f3f6; color: #2c3e50; font-weight: 600; }
+.table td.num, .table th.num { text-align: right; }
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .subnav { top: 60px; border-radius: 18px; }
+}
+

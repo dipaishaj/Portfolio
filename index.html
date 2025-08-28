@@ -18,6 +18,7 @@
             <button class="menu-toggle" onclick="toggleMenu()">☰</button> 
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
+                <li><a href="#teaching">Teaching</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#publications">Publications</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -29,9 +30,6 @@
 </header>
 
 
-
-
-
     <!-- Main Content -->
     <main>
         <!-- About Section -->
@@ -41,6 +39,148 @@
                 <p>I am a PhD candidate at the University of Texas at Dallas specializing in Computer Engineering with a focus on hardware security using AI. With over a decade of academic and industry experience, I aim to innovate in secure and intelligent hardware systems.</p>
             </div>
         </section>
+        
+        <!-- TEACHING (Multilayer) -->
+        <section id="teaching" class="section">
+            <div class="container">
+                <h2>Teaching</h2>
+                <p id="teaching-overview" style="max-width:900px;margin:0 auto 1.5rem;">
+                    My teaching centers on <strong>active, project-based learning</strong> in STEM 
+                    with inclusive pedagogy and authentic lab experiences. I emphasize hands-on labs, 
+                    responsible AI/ML literacy, and transparent, flexible assessment. </p>
+                <nav class="subnav" aria-label="Teaching subsections">
+                    <a class="subnav-link active" href="#t-exp">Experience</a>
+                    <a class="subnav-link" href="#t-evals">Evaluations</a>
+                    <a class="subnav-link" href="#t-mentoring">Mentoring</a>
+                    <a class="subnav-link" href="#t-dei">DEI</a>
+                    <a class="subnav-link" href="#t-appendices">Appendices</a>
+                </nav>
+                    
+                    <!-- Teaching: Experience -->
+                <section id="t-exp" class="t-block">
+                    <h3>Teaching Experience</h3>
+                    <p>Briefly summarize your overall load (courses, labs, class sizes) and highlight innovations (flipped sessions, project-based modules, toolchains).</p>
+                    <h4 style="margin-top:1rem;">Courses Taught (selected)</h4>
+                    <h5>Fundamentals of Digital/Analog Circuits — UTD (TA / Guest Lecturer)</h5>
+                    <ul class="t-list">
+                        <li>Ran laboratory sessions; created <strong>hands-on experiments</strong> (Arduino/Tinkercad, oscilloscopes, AD2).</li>
+                        <li>Designed rubrics aligned with ABET outcomes; supported 100+ students/semester.</li>
+                        <li>Integrated <strong>Python + Jupyter</strong> for rapid data analysis in labs.</li>
+                    </ul>
+                    <h5 style="margin-top:1rem;">Embedded Systems, Digital Circuits, IoT, Industrial Automation — RGIT (Instructor)</h5>
+                    <ul class="t-list">
+                        <li><strong>Developed syllabus</strong> and <strong>built an Industrial Automation Lab</strong> (Siemens S-1200 PLC, Emerson Delta-V DCS).</li>
+                        <li>Led multi-week projects (sensing, actuation, control, dashboards).</li>
+                    </ul>
+                    <h5 style="margin-top:1rem;">Additional Topics</h5>
+                    <ul class="t-list">
+                        <li>Control Systems, Image Processing (lecture + lab support).</li>
+                        <li>Guest modules in Applied Cryptography (security labs and demos).</li>
+                    </ul>
+                    <p style="margin-top:1rem;">
+                        <a href="assets/Fundamentals_Syllabus.pdf" target="_blank" rel="noopener">Sample syllabus (PDF)</a>
+                    </p>
+                </section>
+                
+                <!-- Teaching: Evaluations -->
+                <section id="t-evals" class="t-block">
+                    <h3>Evidence of Teaching Effectiveness</h3>
+                    <p>Summarize evaluations and provide context (course level, class size). Add what you changed and how it improved learning.</p>
+                    <div class="table-wrap">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Year</th><th>Course</th><th>Role</th><th class="num">Class Size</th><th class="num">Overall (/5)</th><th class="num">Dept Avg</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>2018–19</td><td>Image Processing</td><td>Instructor</td><td class="num">60</td><td class="num">4.7</td><td class="num">4.2</td></tr>
+                                <tr><td>2018–19</td><td>Process Automation</td><td>Instructor</td><td class="num">60</td><td class="num">4.6</td><td class="num">4.2</td></tr>
+                                <tr><td>2020–21</td><td>Internet of Things</td><td>Instructor</td><td class="num">60</td><td class="num">4.7</td><td class="num">4.3</td></tr>
+                                <tr><td>2020–21</td><td>Biosensors & Signal Processing</td><td>Instructor</td><td class="num">60</td><td class="num">4.5</td><td class="num">4.3</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <figure style="margin-top:1rem;">
+                        <img src="assets/eval_summary.png" alt="Evaluation summary chart" class="t-image">
+                    </figure>
+                    <p class="t-files">
+                        <strong>Full reports (PDF):</strong>
+                        <a href="assets/RGIT_Evals_2019.pdf" target="_blank" rel="noopener">2019</a> ·
+                        <a href="assets/RGIT_Evals_2021.pdf" target="_blank" rel="noopener">2021</a>
+                    </p>
+                </section>
+                
+                <!-- ===== Teaching: Mentoring ===== -->
+                <section id="t-mentoring" class="t-block">
+                    <h3>Mentoring & Advising</h3>
+                    <p>Highlight supervision of student projects (UG/Grad), outcomes (awards, publications, placements), and your mentoring approach.</p>
+                    <h4 style="margin-top:1rem;">Selected Projects</h4>
+                    <ul class="t-list">
+                        <li><strong>Analog Circuit Security (UG Capstone):</strong> supervised PCB prototyping + SPICE modeling → poster prize.</li>
+                        <li><strong>Battery Anomaly Detection for Drones:</strong> mentored MSP432-based data collection + TinyML baseline.</li>
+                        <li><strong>Graph Learning for Circuits:</strong> guided dataset preparation and evaluation scripts.</li>
+                    </ul>
+                    <h4 style="margin-top:1rem;">Student Project Sample</h4>
+                    <p class="t-card">
+                        <strong>IoT-Based Weather Reporting System</strong> (2020)<br>
+                        <em>Students:</em> Akshay Chavan, Radhika Kamble, Tanvi Nanekar, Anjali Rane<br>
+                        <em>Guide:</em> Prof. Dipali Joshi-Jain<br>
+                        <strong>Highlights:</strong> Cloud-connected weather station using Raspberry Pi/ESP8266; sensors (temperature, humidity, pressure, rain); ThingSpeak cloud; mobile/web dashboard.<br>
+                        <a href="assets/IoT_Weather_Project.pptx" target="_blank" rel="noopener">Presentation (PPTX)</a>
+                    </p>
+                </section>
+                
+                <!-- ===== Teaching: DEI ===== -->
+                <section id="t-dei" class="t-block">
+                    <h3>Diversity, Equity, and Inclusion</h3>
+                    <p>I design for inclusion by lowering hidden curriculum barriers, building community, and giving multiple pathways to demonstrate learning.</p>
+                    <h4 style="margin-top:1rem;">Inclusive Practices</h4>
+                    <ul class="t-list">
+                        <li><strong>Structured team formation</strong> to balance backgrounds and experience.</li>
+                        <li><strong>Multiple demonstration pathways</strong> (notebooks, lab videos, reflective memos).</li>
+                        <li><strong>Transparent rubrics</strong> and early exemplars to reduce ambiguity.</li>
+                        <li><strong>Office-hour triage</strong> and peer shout-outs to foster community.</li>
+                    </ul>
+                    
+                    <h4 style="margin-top:1rem;">Wellness & Belonging</h4>
+                    <p>As a <strong>certified yoga instructor</strong>, I integrate brief optional mindfulness/wellness micro-sessions during intense lab/exam periods to support focus and stress management, especially for first-gen and international students.</p>
+                    <h4 style="margin-top:1rem;">Outreach & Service</h4>
+                    <p>Organized cultural events and community clean-ups; mentored diverse students transitioning to project-based ECE courses.</p>
+                </section>
+                
+                <!-- ===== Teaching: Appendices ===== -->
+                
+                <section id="t-appendices" class="t-block">
+                    <h3>Appendices & Downloads</h3>
+                    
+                    <h4>Curriculum Development</h4>
+                    <ul class="t-files">
+                        <li><a href="assets/IoT_Syllabus_2016.pdf" target="_blank" rel="noopener">IoT Syllabus 2016–17 (CBCGS)</a></li>
+                        <li><a href="assets/IoT_Syllabus_Revision_2020.pdf" target="_blank" rel="noopener">Minutes of Meeting: IoT Syllabus Revision 2020</a></li>
+                    </ul>
+                    
+                    <h4 style="margin-top:1rem;">Lab Materials</h4>
+                    <ul class="t-files">
+                        <li><a href="assets/IoT_Lab_Manual.pdf" target="_blank" rel="noopener">IoT Laboratory Manual (Sample)</a></li>
+                    </ul>
+                    
+                    <h4 style="margin-top:1rem;">Student Project Samples</h4>
+                    <ul class="t-files">
+                        <li><a href="assets/IoT_Weather_Project.pptx" target="_blank" rel="noopener">IoT Weather Reporting System – Student Presentation</a></li>
+                    </ul>
+                    <h4 style="margin-top:1rem;">Recognition & Awards</h4>
+                    <ul class="t-files">
+                        <li><a href="assets/Letter_Quality_Teaching.pdf" target="_blank" rel="noopener">Letter of Appreciation – Quality Teaching</a></li>
+                        <li><a href="assets/Letter_Syllabus_Revision.pdf" target="_blank" rel="noopener">Letter of Appreciation – Contribution to IoT Syllabus Revision</a></li>
+                        <li><a href="assets/ISA_Best_Faculty_Advisor.pdf" target="_blank" rel="noopener">ISA Best Faculty Advisor Award</a></li>
+                        <li><a href="assets/Yoga_Teacher_Certificate.pdf" target="_blank" rel="noopener">Yoga Teacher’s Training Certificate</a></li>
+                    </ul>
+                </section>
+            </div>
+        </section>
+<!-- =================== /TEACHING (Multilayer) =================== -->
+
 
         <!-- Skills Section -->
         <section id="skills" class="section skills-section">
