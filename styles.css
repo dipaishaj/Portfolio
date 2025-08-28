@@ -663,3 +663,13 @@ html { scroll-behavior: smooth; }
     .subnav { top: 60px; border-radius: 18px; }
 }
 
+/* Teaching Section Subheadings */
+.teaching-subheading {
+  font-size: 1.5rem;     /* larger than normal h4 */
+  font-weight: 700;
+  color: #2c3e50;        /* matches your site palette */
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+  text-align: left;      /* keep aligned with content */
+}
+
