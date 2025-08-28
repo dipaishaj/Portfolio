@@ -665,7 +665,7 @@ html { scroll-behavior: smooth; }
 
 /* Teaching Section Styling */
 .courses-heading {
-  font-size: 2rem;          /* larger main heading */
+  font-size: 1.9rem;   /* just under your main h2 (2rem) */
   font-weight: 800;
   color: #2c3e50;
   margin-top: 2rem;
@@ -674,10 +674,10 @@ html { scroll-behavior: smooth; }
 }
 
 .teaching-subheading {
-  font-size: 1.6rem;        /* bigger subheadings */
+  font-size: 1.5rem;   /* slightly smaller than Courses Taught */
   font-weight: 700;
   color: #34495e;
-  margin-top: 1.5rem;       /* spacing before each subheading */
+  margin-top: 1.2rem;  /* spacing before each subheading */
   margin-bottom: 0.5rem;
   text-align: left;
 }
@@ -688,16 +688,14 @@ html { scroll-behavior: smooth; }
   padding-left: 1.2rem;
   text-align: left;
   line-height: 1.7;
-  font-size: 1.1rem;        /* slightly bigger list font */
+  font-size: 1.1rem;
 }
 
 .syllabus-link {
-  margin-top: 1.5rem;       /* spacing before syllabus */
+  margin-top: 1rem;
   font-size: 1.1rem;
   text-align: left;
   max-width: 900px;
   margin-left: auto;
   margin-right: auto;
 }
-
-
