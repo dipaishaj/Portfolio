@@ -663,25 +663,22 @@ html { scroll-behavior: smooth; }
     .subnav { top: 60px; border-radius: 18px; }
 }
 
-/* Teaching Section Styling */
-.courses-heading {
-  font-size: 1.9rem;   /* just under your main h2 (2rem) */
-  font-weight: 800;
-  color: #2c3e50;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
-  text-align: left;
-}
-
+/* Bigger subheadings under Courses Taught (but smaller than Courses Taught) */
 .teaching-subheading {
-  font-size: 1.5rem;   /* slightly smaller than Courses Taught */
+  font-size: 1.6rem;   /* tweak to 1.5–1.7rem if you want */
   font-weight: 700;
   color: #34495e;
-  margin-top: 1.2rem;  /* spacing before each subheading */
+  margin-top: 1rem;    /* spacing before each subheading */
   margin-bottom: 0.5rem;
   text-align: left;
 }
 
+/* Extra gap specifically between “Courses Taught” and the first subheading */
+.courses-heading + .teaching-subheading {
+  margin-top: 1.25rem; /* adds the “little spacing” you wanted */
+}
+
+/* Lists & syllabus link spacing/legibility */
 .t-list {
   max-width: 900px;
   margin: 0 auto 1rem;
@@ -692,7 +689,7 @@ html { scroll-behavior: smooth; }
 }
 
 .syllabus-link {
-  margin-top: 1rem;
+  margin-top: 1rem;    /* space before “Sample syllabus (PDF)” */
   font-size: 1.1rem;
   text-align: left;
   max-width: 900px;
